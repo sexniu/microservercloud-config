@@ -3,19 +3,14 @@ spring:
     active: 
     - dev
 
+---
 server: 
   port:8001
-eureka: 
-  client: 
-    service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
 info: 
   app.name: gen-microservercloud-springcloudconfig02
   company.name: genshi
   build.artifactId: $project.artifactId$
   build.version: $project.version$
-
----
 spring: 
   profiles: dev
   application:
@@ -33,11 +28,20 @@ spring:
       max-wait-millis: 200
 
 eureka: 
-  instance:
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance: 
     instance-id: microservercloud-config-dept-dev8001 #定义服务实例名
     prefer-ip-address: true #访问路径可以显示ip
-
+info: 
+  app.name: gen-microservercloud-springcloudconfig02
+  company.name: genshi
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 ---
+server: 
+  port:8001
 spring: 
   profiles: test
   application: 
@@ -55,6 +59,14 @@ spring:
       max-wait-millis: 200
       
 eureka: 
-  instance:
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance: 
     instance-id: microservercloud-config-dept-test8001 #定义服务实例名
     prefer-ip-address: true #访问路径可以显示ip
+info: 
+  app.name: gen-microservercloud-springcloudconfig02
+  company.name: genshi
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
