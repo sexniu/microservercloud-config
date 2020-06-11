@@ -50,10 +50,6 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 200
-eureka:
-  client: 
-    service-url: 
-      defaultZone: http://eureka7002.com:7002/eureka/
   instance:
     instance-id: microservercloud-config-dept-test8001 #定义服务实例名
     prefer-ip-address: true #访问路径可以显示ip
