@@ -3,11 +3,8 @@ spring:
     active: 
     - dev
 ---
-info: 
-  app.name: gen-microservercloud-springcloudconfig02
-  company.name: genshi
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+server: 
+  port: 8001
 spring: 
   profiles: dev
   application:
@@ -37,6 +34,8 @@ info:
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
+server: 
+  port: 8001
 spring: 
   profiles: test
   application: 
