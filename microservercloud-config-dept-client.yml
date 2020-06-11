@@ -30,7 +30,7 @@ eureka:
     prefer-ip-address: true #访问路径可以显示ip
 
 info:
-  app.name: gen-microservercloud
+  app.name: gen-microservercloud-springcloudconfig02
   company.name: genshi
   build.artifactId: $project.artifactId$
   build.version: $project.version$
