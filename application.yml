@@ -14,4 +14,4 @@ spring:
   profiles: test
   application: 
     name: microservercloud-gen-test
-# 必须保存为UTF-8的格式
+# 必须保存为UTF-8的格式, 否则会报一些未知错误!!
