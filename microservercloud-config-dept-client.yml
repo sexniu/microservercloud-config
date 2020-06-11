@@ -3,8 +3,6 @@ spring:
     active: 
     - dev
 ---
-server: 
-  port: 8001
 info: 
   app.name: gen-microservercloud-springcloudconfig02
   company.name: genshi
