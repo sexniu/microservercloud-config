@@ -2,10 +2,9 @@ spring:
   profiles: 
     active: 
     - dev
-
 ---
 server: 
-  port:8001
+  port: 8001
 info: 
   app.name: gen-microservercloud-springcloudconfig02
   company.name: genshi
@@ -41,7 +40,7 @@ info:
   build.version: $project.version$
 ---
 server: 
-  port:8001
+  port: 8001
 spring: 
   profiles: test
   application: 
